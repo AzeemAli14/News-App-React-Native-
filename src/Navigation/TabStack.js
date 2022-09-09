@@ -2,14 +2,12 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import HomeScreen from '../screens/HomeScreen';
-import Business from '../screens/Business';
-import HealthScreen from '../screens/HealthScreen';
-import SportsScreen from '../screens/SportsScreen';
-import TechScreen from '../screens/TechScreen';
+import HomeScreen from '../screens/main/HomeScreen';
+import Business from '../screens/main/Business';
+import HealthScreen from '../screens/main/HealthScreen';
+import SportsScreen from '../screens/main/SportsScreen';
+import TechScreen from '../screens/main/TechScreen';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { COLOR_WHITE } from '../constants/Colors';
-
 
 const TabStack = () => {
   const Tab = createBottomTabNavigator();

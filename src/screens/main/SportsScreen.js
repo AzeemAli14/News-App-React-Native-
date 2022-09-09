@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {NativeBaseProvider, FlatList, Divider, Image} from 'native-base';
-import {services} from '../api/services/Services';
+import {services} from '../../api/services/Services';
 import moment from 'moment';
-import Header from '../components/Header';
-import {COLOR_WHITE, COLOR_Black, COLOR_GREY} from '../constants/Colors';
+import Header from '../../components/Header';
+import {COLOR_WHITE, COLOR_Black, COLOR_GREY} from '../../constants/Colors';
 
 const SportsScreen = () => {
   const [newsData, setNewsData] = useState([]);

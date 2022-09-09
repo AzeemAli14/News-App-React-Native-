@@ -6,15 +6,15 @@ import {
   Divider,
   Image,
 } from 'native-base';
-import {services} from '../api/services/Services';
+import {services} from '../../api/services/Services';
 import moment from 'moment';
-import Header from '../components/Header';
-import { COLOR_WHITE, COLOR_Black, COLOR_GREY } from '../constants/Colors';
+import Header from '../../components/Header';
+import { COLOR_WHITE, COLOR_Black, COLOR_GREY } from '../../constants/Colors';
 
-const Business = () => {
+const TechScreen = () => {
   const [newsData, setNewsData] = useState([]);
   useEffect(() => {
-    services('business')
+    services('technology')
       .then(data => {
         setNewsData(data);
       })
@@ -24,7 +24,7 @@ const Business = () => {
   }, []);
   return (
     <NativeBaseProvider>
-      <Header titleText="Business" />
+      <Header titleText="Technology" />
           <FlatList
             data={newsData}
             renderItem={({item}) => (
@@ -58,7 +58,7 @@ const Business = () => {
   );
 }
 
-export default Business;
+export default TechScreen;
 
 const styles = StyleSheet.create({
   newsContainer: {

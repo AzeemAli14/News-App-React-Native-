@@ -6,15 +6,15 @@ import {
   Divider,
   Image,
 } from 'native-base';
-import {services} from '../api/services/Services';
+import {services} from '../../api/services/Services';
 import moment from 'moment';
-import Header from '../components/Header';
-import { COLOR_WHITE, COLOR_Black, COLOR_GREY } from '../constants/Colors';
+import Header from '../../components/Header';
+import { COLOR_WHITE, COLOR_Black, COLOR_GREY } from '../../constants/Colors';
 
-const HealthScreen = () => {
+const Business = () => {
   const [newsData, setNewsData] = useState([]);
   useEffect(() => {
-    services('health')
+    services('business')
       .then(data => {
         setNewsData(data);
       })
@@ -24,7 +24,7 @@ const HealthScreen = () => {
   }, []);
   return (
     <NativeBaseProvider>
-      <Header titleText="Health" />
+      <Header titleText="Business" />
           <FlatList
             data={newsData}
             renderItem={({item}) => (
@@ -58,7 +58,7 @@ const HealthScreen = () => {
   );
 }
 
-export default HealthScreen;
+export default Business;
 
 const styles = StyleSheet.create({
   newsContainer: {

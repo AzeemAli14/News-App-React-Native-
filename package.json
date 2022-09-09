@@ -1,5 +1,5 @@
 {
-  "name": "News_App",
+  "name": "news_app",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -11,12 +11,15 @@
   },
   "dependencies": {
     "@react-native-firebase/app": "^15.4.0",
+    "@react-native-firebase/auth": "^15.4.0",
+    "@react-native-google-signin/google-signin": "^8.0.0",
     "@react-navigation/bottom-tabs": "^6.3.3",
     "@react-navigation/native": "^6.0.12",
     "@react-navigation/native-stack": "^6.8.0",
     "@rneui/base": "github:react-native-elements/react-native-elements#base",
     "@rneui/themed": "github:react-native-elements/react-native-elements#themed",
     "axios": "^0.27.2",
+    "firebase": "^9.9.4",
     "moment": "^2.29.4",
     "native-base": "^3.4.13",
     "react": "18.1.0",
@@ -41,5 +44,17 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzeemAli96/News-App-React-Native-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AzeemAli96/News-App-React-Native-/issues"
+  },
+  "homepage": "https://github.com/AzeemAli96/News-App-React-Native-#readme",
+  "description": ""
 }
